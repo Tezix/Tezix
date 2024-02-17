@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 
 function BackgroundHome() {
 
-
+  useEffect(()=> {
   function random(min, max) {
     return Math.random() * (max - min) + min;
   }
@@ -185,7 +185,6 @@ function BackgroundHome() {
     view: document.querySelector(".orb-canvas"),
     // auto adjust size to fit the current window
     resizeTo: window,
-    // transparent background, we will be creating a gradient background later using CSS
     transparent: true
   });
   
@@ -220,57 +219,11 @@ function BackgroundHome() {
     });
   }
   
- 
-  useEffect(()=> {
-    document
-    .querySelector(".overlay__btn--colors")
-    .addEventListener("click", () => {
-      colorPalette.setColors();
-      colorPalette.setCustomProperties();
-  
-      orbs.forEach((orb) => {
-        orb.fill = colorPalette.randomColor();
-      });
-    });
-  }, [])
+  }, )
 
   return (
     <>
-
-
-
-
-<canvas className="orb-canvas"></canvas>
-<div className="overlay">
-  <div className="overlay__inner">
-    <h1 className="overlay__title">
-      Hey, would you like to learn how to create a
-      <span className="text-gradient">generative</span> UI just like this?
-    </h1>
-    <p className="overlay__description">
-      In this tutorial we will be creating a generative “orb” animation
-      using pixi.js, picking some lovely random colors and pulling it all
-      together in a nice frosty UI.
-      <strong>We're gonna talk accessibility, too.</strong>
-    </p>
-    <div className="overlay__btns">
-
-      <button className="overlay__btn overlay__btn--transparent">
-        <a href="https://georgefrancis.dev/writing/create-a-generative-landing-page-and-webgl-powered-background/" target="_blank">
-
-          View Tutorial
-        </a>
-      </button>
-
-      <button className="overlay__btn overlay__btn--colors">
-        <span>Randomise Colors</span>
-        <span className="overlay__btn-emoji">🎨</span>
-      </button>
-    </div>
-  </div>
-</div>
-
-
+      <canvas className="orb-canvas"></canvas>
     </>
   );
 }
