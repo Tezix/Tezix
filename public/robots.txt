@@ -1,0 +1,8 @@
+# start of file
+
+User-agent: *
+Allow: /
+
+Disallow: https://test.tezix.dev/
+
+Sitemap: https://tezix.dev/sitemap.xml
