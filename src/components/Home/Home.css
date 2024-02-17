@@ -1,20 +1,94 @@
-.initial-logo {
+.initial-logo{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 50vw;
     display: flex;
-    margin: 0 auto;
-    width: 18vw;
-    height: 15vw;
-    overflow: hidden;
+    
+} 
+.initial-logo svg {
+    height: 20vw;
+    margin: 0.2vw;
+}
+#letters {
+    opacity: 0;
+    animation: letters-move  0.4s ease forwards 1.1s;
 }
 
-.initial-logo img {
-    height: 100%;
+#butterfly1 {
+    transform: translateX(150%);
+    animation: butterfly-move  0.3s ease forwards 1.1s;
 }
 
-/* Add a class to trigger the animation */
-.animate-logo {
-    width: 100vw;
-    margin: 0 auto;
+#butterfly1 #left {
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    animation: line-anim 0.6s ease forwards, fillButterfly 1.1s linear forwards;
+}
 
-    transition: width 0.5s ease;
+#butterfly1 #leftbottom {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: line-anim 0.6s ease forwards, fillButterfly  1.1s linear forwards;
+}
 
+#butterfly1 #right {
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    animation: line-anim 0.6s ease forwards, fillButterfly  1.1s linear forwards;
+}
+
+
+#butterfly1 #rightbottom {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: line-anim 0.6s ease forwards, fillButterfly  1.1s linear forwards;
+}
+
+#butterfly1 #center {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: line-anim 0.6s ease forwards, fillButterfly  1.1s linear forwards;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+@keyframes fillButterfly {
+    0% {
+        fill-opacity: 0;
+    }
+    50% {
+        fill-opacity: 0;
+    }
+    100% {
+        fill-opacity: 1; 
+        stroke-opacity: 0;
+    }
+}
+
+
+@keyframes letters-move {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@keyframes butterfly-move {
+    0% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
