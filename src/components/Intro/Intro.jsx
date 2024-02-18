@@ -1,6 +1,6 @@
-import './Home.css';
+import './Intro.css';
 
-function Home() {
+function Intro() {
 
 
   return (
@@ -52,5 +52,5 @@ function Home() {
   );
 }
 
-export default Home;
+export default Intro;
 

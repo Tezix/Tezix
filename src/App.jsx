@@ -1,14 +1,16 @@
-import './App.css'
-import Background from './components/BackgroundHero/Background'
-import HomePage from './pages/HomePage/HomePage'
+import './App.css';
+import HomePage from './pages/HomePage/HomePage';
+import IntroPage from './pages/IntroPage/IntroPage';
+
 function App() {
+
 
   return (
     <>
-{/* <HomePage/> */}
-<Background/>
+      <IntroPage />
+    <HomePage/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
