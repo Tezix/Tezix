@@ -7,7 +7,7 @@ function Navbar() {
     <>
     <div className='nav'>
       <div className='logo-mini'>
-        <img src="src/assets/images/logo-nav.svg" alt="logo" />
+        <img src="/images/logo-nav.svg" alt="logo" />
       </div>
       <div className='menu-desktop outfit-thin'>
         <Link to="#">About</Link>
