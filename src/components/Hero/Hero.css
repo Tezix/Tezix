@@ -34,19 +34,19 @@
 	margin-top: -1.5vw;
 }
 .title .hero-text .text-1 {
-	animation: word-transition-1 0.3s ease forwards 3s, word-transition-1-1 0.3s ease forwards 6s,word-transition-1-2 0.3s ease forwards 9s
+	animation: word-transition-disappear 0.3s ease forwards 3s
 }
 .title .hero-text .text-2 {
 	transform: translateY(90%);
-	animation: word-transition-2 0.3s ease forwards 3s, word-transition-2-1 0.3s ease forwards 6s,word-transition-2-2 0.3s ease forwards 9s
+	animation: word-transition-show 0.3s ease forwards 3s, word-transition-disappear 0.3s ease forwards 6s
 }
 .title .hero-text .text-3 {
-	transform: translateY(180%);
-	animation: word-transition-3 0.3s ease forwards 3s, word-transition-3-1 0.3s ease forwards 6s,word-transition-3-2 0.3s ease forwards 9s
+	transform: translateY(90%);
+	animation: word-transition-show 0.3s ease forwards 6s,word-transition-disappear 0.3s ease forwards 9s
 }
 .title .hero-text .text-4 {
-	transform: translateY(270%);
-	animation: word-transition-4 0.3s ease forwards 3s, word-transition-4-1 0.3s ease forwards 6s, word-transition-4-2 0.3s ease forwards 9s
+	transform: translateY(90%);
+	animation: word-transition-show 0.3s ease forwards 9s
 }
 .text-1 h1,
 .text-2 h1,
@@ -82,73 +82,13 @@
 	}
 }
 
-@keyframes word-transition-1 {
+@keyframes word-transition-disappear {
 100% {
 	transform: translateY(-90%);
 }
 }
 
-@keyframes word-transition-2 {
-	100% {
-		transform: translateY(0%);
-	}
-}
-
-@keyframes word-transition-3 {
-	100% {
-		transform: translateY(90%);
-	}
-}
-
-@keyframes word-transition-4 {
-	100% {
-		transform: translateY(180%);
-	}
-}
-	
-@keyframes word-transition-1-1 {
-	100% {
-		transform: translateY(-180%);
-	}
-	}
-	
-@keyframes word-transition-2-1 {
-	100% {
-		transform: translateY(-90%);
-	}
-}
-
-@keyframes word-transition-3-1 {
-	100% {
-		transform: translateY(0%);
-	}
-}
-
-@keyframes word-transition-4-1 {
-	100% {
-		transform: translateY(90%);
-	}
-}
-
-@keyframes word-transition-1-2 {
-	100% {
-		transform: translateY(-270%);
-	}
-	}
-	
-@keyframes word-transition-2-2 {
-	100% {
-		transform: translateY(-180%);
-	}
-}
-
-@keyframes word-transition-3-2 {
-	100% {
-		transform: translateY(-90%);
-	}
-}
-
-@keyframes word-transition-4-2 {
+@keyframes word-transition-show {
 	100% {
 		transform: translateY(0%);
 	}
