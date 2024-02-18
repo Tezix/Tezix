@@ -25,17 +25,16 @@ function BackgroundHome() {
   class ColorPalette {
     constructor() {
       this.setColors();
-      this.setCustomProperties();
     }
   
     setColors() {
       // pick a random hue somewhere between 220 and 360
-      this.hue = ~~random(220, 360);
-      this.complimentaryHue1 = this.hue + 30;
-      this.complimentaryHue2 = this.hue + 60;
+      this.hue = 25;
+      this.complimentaryHue1 = this.hue + 315;
+      this.complimentaryHue2 = this.hue + 320;
       // define a fixed saturation and lightness
-      this.saturation = 95;
-      this.lightness = 50;
+      this.saturation = 75;
+      this.lightness = 30;
   
       // define a base color
       this.baseColor = hsl(this.hue, this.saturation, this.lightness);
@@ -68,18 +67,7 @@ function BackgroundHome() {
       );
     }
   
-    setCustomProperties() {
-      // set CSS custom properties so that the colors defined here can be used throughout the UI
-      document.documentElement.style.setProperty("--hue", this.hue);
-      document.documentElement.style.setProperty(
-        "--hue-complimentary1",
-        this.complimentaryHue1
-      );
-      document.documentElement.style.setProperty(
-        "--hue-complimentary2",
-        this.complimentaryHue2
-      );
-    }
+
   }
   
   // Orb class
