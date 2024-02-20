@@ -6,7 +6,6 @@
 }
 
 .title h1 {
-	padding-top: 0.25vw;
 	color: #E9E9E9;
 	font-size: 6vw;
 	letter-spacing: -0.3vw;
@@ -31,8 +30,6 @@
 	-webkit-text-fill-color: transparent;
 	padding-right: 0.5vw;
 	margin: 0;
-	padding-top: 0.22vw;
-	padding-bottom: 0.22vw;
 }
 
 .title .moving-text-bottom h2 {
@@ -55,23 +52,23 @@
 		transform: translateY(0%);
 	}	
 	5% {
-		transform: translateY(-100%);
+		transform: translateY(-94%);
 	}
 	40% {
-		transform: translateY(-100%);
+		transform: translateY(-94%);
 	}
 	45% {
-		transform: translateY(-200%);
+		transform: translateY(-188%);
 	}
 	70% {
-		transform: translateY(-200%);
+		transform: translateY(-188%);
 	}
 	75% {
-		transform: translateY(-300%);
+		transform: translateY(-282%);
 	}
 	
 	100%{
-		transform: translateY(-300%);
+		transform: translateY(-282%);
 	}
 	
 }
@@ -90,7 +87,6 @@
 	}
 	
 	.title h1 {
-		padding-top: 0.25vw;
 		color: #E9E9E9;
 		font-size: 9vw;
 		letter-spacing: -0.3vw;
@@ -99,14 +95,12 @@
 	}
 
 	.title h2 {
-		padding-top: 0.25vw;
 		color: #E9E9E9;
 		font-size: 9vw;
 		letter-spacing: -0.3vw;
 		width: 100%;
 		margin: 0;
-		padding-top: 0.36vw;
-		padding-bottom: 0.36vw;
+	
 	}
 
 
