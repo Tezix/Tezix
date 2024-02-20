@@ -52,23 +52,23 @@
 		transform: translateY(0%);
 	}	
 	5% {
-		transform: translateY(-94%);
+		transform: translateY(-94.5%);
 	}
 	40% {
-		transform: translateY(-94%);
+		transform: translateY(-94.5%);
 	}
 	45% {
-		transform: translateY(-188%);
+		transform: translateY(-189%);
 	}
 	70% {
-		transform: translateY(-188%);
+		transform: translateY(-189%);
 	}
 	75% {
-		transform: translateY(-282%);
+		transform: translateY(-283.5%);
 	}
 	
 	100%{
-		transform: translateY(-282%);
+		transform: translateY(-283.5%);
 	}
 	
 }
