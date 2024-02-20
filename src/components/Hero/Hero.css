@@ -1,6 +1,5 @@
 .hero {
 	animation: hero-show  1s ease forwards;
-	width: 100%;
 	text-align: start;
 	margin-left: 7vw;
 }
@@ -9,16 +8,13 @@
 	color: #E9E9E9;
 	font-size: 6vw;
 	letter-spacing: -0.3vw;
-	width: 100%;
 	margin: 0;
 }
 
 
 .text {
-	display: flex;
 	overflow: hidden;
-	width: 100%;
-	height: 8vw
+	height: 8vw;
 }
 
 .title h2 {
@@ -27,22 +23,29 @@
 	color: #fff;
 	background-clip: text;
 	-webkit-background-clip: text;
+	background-size: 25vw;
 	-webkit-text-fill-color: transparent;
-	padding-right: 0.5vw;
 	margin: 0;
 }
 
 .title .moving-text-bottom h2 {
 	background: linear-gradient(to right, #FEB6B5, #B05C86);
+	font-size: 6vw;
+	color: #fff;
 	background-clip: text;
+	background-size: 22vw;
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	padding-right: 0.3vw;
+	margin: 0;
 }
 
 
-.moving-text-top,
+.moving-text-top {
+	margin-left: 30vw;
+	animation: animation-title 9s ease infinite;
+}
 .moving-text-bottom {
-	margin-left: 1.7vw;
+	margin-left: 12vw;
 	animation: animation-title 9s ease infinite;
 }
 
@@ -52,23 +55,23 @@
 		transform: translateY(0%);
 	}	
 	5% {
-		transform: translateY(-94.5%);
+		transform: translateY(-25%);
 	}
 	40% {
-		transform: translateY(-94.5%);
+		transform: translateY(-25%);
 	}
 	45% {
-		transform: translateY(-189%);
+		transform: translateY(-50%);
 	}
 	70% {
-		transform: translateY(-189%);
+		transform: translateY(-50%);
 	}
 	75% {
-		transform: translateY(-283.5%);
+		transform: translateY(-75%);
 	}
 	
 	100%{
-		transform: translateY(-283.5%);
+		transform: translateY(-75%);
 	}
 	
 }
@@ -76,5 +79,31 @@
 
 @media (max-width: 600px) {
 
+	.hero {
+		animation: hero-show  1s ease forwards;
+	margin-left: 9vw;
 
+	}
+	
+	.title h2,
+	.title .moving-text-bottom h2  {
+		font-size: 9vw;
+	}
+	.title h1 {
+		font-size: 9vw;
+	}
+	.text {
+		height: 12vw;
+	}
+
+	.moving-text-top {
+		margin-left: 47vw;
+		animation: animation-title 9s ease infinite;
+	}
+	.moving-text-bottom {
+		margin-left: 18vw;
+		animation: animation-title 9s ease infinite;
+	}
+	
+	
 }
