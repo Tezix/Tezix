@@ -7,7 +7,7 @@
 
 .title h1 {
 	color: #E9E9E9;
-	font-size: 9vw;
+	font-size: 6vw;
 	letter-spacing: -0.3vw;
 	width: 100%;
 	margin: 0;
@@ -18,12 +18,12 @@
 	display: flex;
 	overflow: hidden;
 	width: 100%;
-	height: 12vw
+	height: 8vw
 }
 
 .title h2 {
 	background: linear-gradient(to right, #B05C86, #FEB6B5);
-	font-size: 9vw;
+	font-size: 6vw;
 	color: #fff;
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -82,19 +82,8 @@
 
 	.text {
 		justify-content: center;
-		height: 12vw;
+		transform: scale(1.5)
 	}
 	
-	.title h1 {
-		font-size: 9vw;
-	}
-
-	.title h2 {
-		font-size: 9vw;
-	
-	}
-
-
-
 
 }
