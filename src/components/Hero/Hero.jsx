@@ -52,7 +52,7 @@ function Hero() {
 <div className='hero'>
       <div className='title'>
         <div className="text">
-          <div>
+          <div className='static-text-top'>
             <h1 className='outfit-extralight'>We help you</h1>
           </div>
           <div className='moving-text-top'>
