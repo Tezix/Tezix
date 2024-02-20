@@ -6,7 +6,7 @@ function Hero() {
 
   return (
     <>
-    <div className='hero'>
+    {/* <div className='hero'>
       <div className='title'>
         <div className="hide-text">
           <div className="top hero-text">
@@ -44,6 +44,33 @@ function Hero() {
             <div className="text-4">
             <h1 className='outfit-extralight'>your <span className='outfit-regular'>ideas</span></h1>
             </div>
+          </div>
+        </div>
+      </div>
+    </div> */}
+
+<div className='hero'>
+      <div className='title'>
+        <div className="text">
+          <div>
+            <h1 className='outfit-extralight'>We help you</h1>
+          </div>
+          <div className='moving-text-top'>
+            <h2 className='outfit-regular'>building</h2>
+            <h2 className='outfit-regular'>enhacing</h2>
+            <h2 className='outfit-regular'>reaching</h2>
+            <h2 className='outfit-regular'>building</h2>
+          </div>
+        </div>
+        <div className="text">
+          <div>
+            <h1 className='outfit-extralight'>your</h1>
+          </div>
+          <div className='moving-text-bottom'>
+            <h2 className='outfit-regular'>ideas</h2>
+            <h2 className='outfit-regular'>business</h2>
+            <h2 className='outfit-regular'>goals</h2>
+            <h2 className='outfit-regular'>ideas</h2>
           </div>
         </div>
       </div>
