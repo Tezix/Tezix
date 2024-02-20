@@ -87,10 +87,13 @@
 	
 	.title h2,
 	.title .moving-text-bottom h2  {
+		background-size: 50vw;
 		font-size: 9vw;
 	}
 	.title h1 {
 		font-size: 9vw;
+		background-size: 30vw;
+
 	}
 	.text {
 		height: 12vw;
