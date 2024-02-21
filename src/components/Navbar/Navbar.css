@@ -33,7 +33,8 @@
 
 .get-in-touch-button a{
 	transform: translateX(70%);
-	font-family: 'NATS',serif;
+	font-family: 'NATS',sans-serif;
+	font-weight: bold;
 	font-size: 1.2vw;
 	width: 9vw;
 	color: white;
