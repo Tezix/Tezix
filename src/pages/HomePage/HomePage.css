@@ -1,3 +1,10 @@
 #Hero {
     margin-top: 25vh;
 }
+
+@media (max-width: 450px) {
+    #Hero {
+        margin-top: 15vh;
+    }
+    
+}

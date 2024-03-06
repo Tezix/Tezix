@@ -16,20 +16,20 @@ function Intro() {
               </g>
               <defs>
                       <linearGradient id="gradient1" x1="179" y1="149.5" x2="-3.49288e-06" y2="152.5" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#FEBAAF"/>
-                          <stop offset="1" stop-color="#FFC2A2"/>
+                          <stop stopColor="#FEBAAF"/>
+                          <stop offset="1" stopColor="#FFC2A2"/>
                       </linearGradient>
                       <linearGradient id="gradient2" x1="104" y1="218" x2="10.5" y2="218" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#D88B97"/>
-                          <stop offset="1" stop-color="#E49699"/>
+                          <stop stopColor="#D88B97"/>
+                          <stop offset="1" stopColor="#E49699"/>
                       </linearGradient>
                       <linearGradient id="gradient3" x1="151.849" y1="149.5" x2="330.849" y2="152.5" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#FEB9B1"/>
-                          <stop offset="1" stop-color="#FEB1BD"/>
+                          <stop stopColor="#FEB9B1"/>
+                          <stop offset="1" stopColor="#FEB1BD"/>
                       </linearGradient>
                       <linearGradient id="gradient4" x1="229" y1="218" x2="315" y2="218" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#B66388"/>
-                          <stop offset="1" stop-color="#AC5585"/>
+                          <stop stopColor="#B66388"/>
+                          <stop offset="1" stopColor="#AC5585"/>
                       </linearGradient>
                     
               </defs>
@@ -39,8 +39,8 @@ function Intro() {
               <path  d="M0.525568 62.4091V0.363628H247.045V62.4091H161.733V284H85.8381V62.4091H0.525568ZM276.025 284V0.363628H480.443V62.4091H353.028V111.159H469.917V173.205H353.028V221.955H479.889V284H276.025ZM519.741 284V241.344L653.803 62.4091H520.295V0.363628H751.857V43.0199L617.795 221.955H751.303V284H519.741ZM866.427 0.363628V284H789.424V0.363628H866.427ZM985.463 0.363628L1032 82.9062H1034.21L1081.3 0.363628H1167.17L1082.41 142.182L1170.49 284H1082.41L1034.21 199.795H1032L983.801 284H896.272L983.247 142.182L899.042 0.363628H985.463Z" fill="url(#paint0_linear_131_139)"/>
               <defs>
                 <linearGradient id="paint0_linear_131_139" x1="1183" y1="142" x2="-10" y2="142" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#AD5686"/>
-                <stop offset="1" stop-color="#E5979A"/>
+                <stop stopColor="#AD5686"/>
+                <stop offset="1" stopColor="#E5979A"/>
                 </linearGradient>
               </defs>
             </svg>
