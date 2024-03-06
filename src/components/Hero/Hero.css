@@ -91,7 +91,7 @@
 
 .card h2 {
 	font-size: 2vw;
-	color: #cbcbcb;
+	color: #e3e3e3;
 }
 /* -------------end cards------------- */
 
@@ -133,8 +133,11 @@
 	.title .moving-text-bottom h2  {
 		background-size: 50vw;
 		font-size: 9vw;
+		font-weight: 600 ;
+
 	}
 	.title h1 {
+		font-weight: 400 ;
 		font-size: 9vw;
 		background-size: 30vw;
 
@@ -155,19 +158,21 @@
 
 	/* -------------cards------------- */
 .cards {
-	margin-top: 60px;
-	gap: 2vw;
+	margin-top: 90px;
+	flex-direction: column;
+	gap: 7vw;
 	justify-content: center;
 }
 .card {
 	border-radius: 1vw;
-	width: 30vw;
+	width: 80vw;
 }
 
 
 .card h2 {
-	font-size: 3vw;
-	color: #cbcbcb;
+	font-size: 5vw;
+	font-weight: 300 ;
+
 }
 /* -------------end cards------------- */
 	
