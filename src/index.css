@@ -6,7 +6,7 @@
 
 body {
 animation: background-animation 0.3s ease forwards 1.8s;
-font-display: swap;
+font-display: block;
 }
 
 a {
