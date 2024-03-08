@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 @font-face {
   font-family: 'NATS';
@@ -7,6 +6,7 @@
 
 body {
 animation: background-animation 0.3s ease forwards 1.8s;
+font-display: block;
 }
 
 a {

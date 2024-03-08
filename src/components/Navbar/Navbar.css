@@ -40,14 +40,23 @@
 	width: 11vw;
 	color: white;
 	border-radius: 1.5vw;
-	background-image: linear-gradient(to right, rgba(181, 98, 137, 0.8), rgba(239, 157, 134, 0.8))
+	background-image: linear-gradient(to right, rgba(181, 98, 137, 0.6), rgba(239, 157, 134, 0.6));
+	box-shadow: 0 ;
+	filter: brightness(1);
+	transition: all 0.3s ease;
+}
+
+.get-in-touch-button a:hover {
+	filter: brightness(1.7) ;
+	color: rgb(16, 16, 16);
+	transition: all 0.3s ease;
 }
 
 .menu-desktop a {
 	border-radius: 0.5vw;
 	font-size: 1.7vw;
 	background-image: transparent;
-	padding: 5px 10px;
+	padding: 5px 15px;
 	transition: all 0.1s ease;
 }
 .menu-desktop a:hover {
@@ -85,7 +94,7 @@
 	.logo-mini img{
 		transform: translateX(0%);
 		margin-left: 5vw;
-		width: 40%;
+		width: 70%;
 	}
 
 	.top-nav {
