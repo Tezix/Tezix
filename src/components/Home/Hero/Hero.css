@@ -1,9 +1,11 @@
 .hero {
+    padding-top: 25vh;
 	animation: hero-show  1s ease forwards;
 	text-align: start;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	min-height: 60vh;
 }
 .title {
 	display: flex;
@@ -128,6 +130,8 @@
 
 	.hero {
 		animation: hero-show  1s ease forwards;
+		padding-top: 20vh;
+		min-height: 80vh;
 	}
 	
 	.title h2,

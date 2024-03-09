@@ -1,11 +1,9 @@
 #Hero {
-    margin-top: 25vh;
-    height: 2000px;
+
 }
 
 @media (max-width: 450px) {
     #Hero {
-        margin-top: 20vh;
     }
     
 }

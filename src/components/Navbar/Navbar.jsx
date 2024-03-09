@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './Navbar.css';
-
+import ActionButton from '../ActionButton/ActionButton';
 function Navbar() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [scrolling, setScrolling] = useState(false);
@@ -46,8 +46,9 @@ function Navbar() {
             <Link to="#">Services</Link>
           </div>
         )}
-        <div className="get-in-touch-button">
-          <Link to="#">GET IN TOUCH</Link> 
+        <div className="action-button">
+        <ActionButton text={'GET IN TOUCH'} />
+
         </div>
       </div>
 
