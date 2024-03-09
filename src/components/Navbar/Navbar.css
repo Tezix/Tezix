@@ -6,10 +6,21 @@
 	top: 0;
 	left: 0;
 	animation: nav-show  1s ease forwards;
-	margin-top: 2vw;
+	padding-top: 2vw;
+	padding-bottom: 1vw;
 	width: 100%;
+	z-index: 2;
+	transition: all 0.2s;
 }
 
+.scroll-down{
+	backdrop-filter: blur(15px);
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.15);
+
+	transition: all 0.2s;
+
+
+} 
 .logo-mini {
 	width: 30%;
 }

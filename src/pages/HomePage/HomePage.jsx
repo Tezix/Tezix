@@ -1,21 +1,15 @@
 import './HomePage.css'
-import Background from './../../components/BackgroundHero/Background';
-import Navbar from './../../components/Navbar/Navbar';
-import Hero from './../../components/Hero/Hero';
-
+import Hero from '../../components/Home/Hero/Hero'
+import WhoWeAre from '../../components/Home/WhoWeAre/WhoWeAre'
 function HomePage() {
 
   
     return (
       <>
-        <>
-          <Navbar/>
-          <Background />
-          <div id='Hero'>
-            <Hero />
-            </div>
-        </>
-
+        <div id='Hero'>
+          <Hero />
+          <WhoWeAre />
+        </div>
       </>
     )
   }
