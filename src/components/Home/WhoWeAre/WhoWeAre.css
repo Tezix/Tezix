@@ -1,5 +1,4 @@
 .who-we-are {
-    margin-top: 13vw;
     background-image: url('./../../../../public/images/WhoWeAreBackground.svg');
     width: 100%;
     height: 45vw;
@@ -56,7 +55,6 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.15);
 .who-we-are .info h2{
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-
     font-size: 5vw;
     color: rgb(33, 33, 33);
 }
@@ -64,14 +62,57 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.15);
 .who-we-are .info p{
     font-size: 2vw;
     color: rgb(47, 47, 47);
-
 }
 
 
 @media (max-width: 450px) {
 
     .who-we-are {
-        margin-top: 1vw;
+    flex-direction: column;
+    background-image: url('./../../../../public/images/WhoWeAreBackgroundMobile.svg');
+    height: 85vw;
     }
+
+
+    .who-we-are .info{
+        width: 80vw;
+        margin-top: 8vw !important;
+        height: 20vw;
+    }
+    .who-we-are .images {
+    margin-top: 20vw;
+        position: relative;
+        overflow: hidden;
+        height: 35vw;
+        width: 70vw;
+    
+    
+    }
+    .who-we-are .image,
+    .who-we-are .image-2 {
+    width: 52%;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 1vw;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.15);
+    
+    }
+    
+    .who-we-are .image-2 {
+        transform: translate(90%,-70%);
+    }
+
+    
+    .who-we-are .info h2{
+        font-size: 7vw;
+    }
+    
+    .who-we-are .info p{
+        font-size: 3vw;
+        color: rgb(47, 47, 47);
+        margin-bottom: 0;
+    }
+    
+
 }
 
