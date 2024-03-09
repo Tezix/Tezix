@@ -17,10 +17,10 @@ function WhoWeAre() {
     </div>
     <div className='images'>
       <div className="image">
-        <img src="./../../../../public/images/WhoWeAreImage1.jpeg" alt="" />
+        <img src="./../../../../images/WhoWeAreImage1.jpeg" alt="" />
       </div>
       <div className="image image-2">
-        <img src="./../../../../public/images/WhoWeAreImage2.jpeg" alt="" />
+        <img src="./../../../../images/WhoWeAreImage2.jpeg" alt="" />
       </div>
     </div>
    
