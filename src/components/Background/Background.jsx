@@ -100,12 +100,12 @@ function BackgroundHome() {
       this.graphics.alpha = 0.825;
   
       // 250ms after the last window resize event, recalculate orb positions.
-      window.addEventListener(
-        "resize",
-        debounce(() => {
-          this.bounds = this.setBounds();
-        }, 250)
-      );
+      // window.addEventListener(
+      //   "resize",
+      //   debounce(() => {
+      //     this.bounds = this.setBounds();
+      //   }, 250)
+      // );
     }
   
     setBounds() {
