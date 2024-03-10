@@ -35,8 +35,10 @@ function Navbar() {
   return (
     <>
       <div className={`top-nav ${scrolling ? 'scroll-down' : ''}`}>
-        <div className='logo-mini'>
+      <div className='logo-mini'>
+        <a href="#" className='logo-link'>
           <img src="/images/logo-nav.svg" alt="logo" />
+        </a>
         </div>
         {windowWidth >= 450 && (
           <div className='menu-desktop outfit-thin'>
@@ -48,18 +50,15 @@ function Navbar() {
         )}
         <div className="action-button">
         <ActionButton text={'GET IN TOUCH'} />
-
         </div>
       </div>
 
-      <div className="bottom-nav">
       {windowWidth < 450 && (
         <div className='menu-mobile outfit-regular'>
 MENU
 </div>
 
       )}
-      </div>
     </>
   );
 }

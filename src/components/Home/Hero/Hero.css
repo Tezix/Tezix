@@ -7,13 +7,13 @@
 	align-items: center;
 	min-height: 75vh;
 }
-.title {
+.hero .title {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	
 }
-.title h1 {
+.hero .title h1 {
 	color: #E9E9E9;
 	font-size: 6vw;
 	letter-spacing: -0.3vw;
@@ -21,12 +21,12 @@
 }
 
 
-.text {
+.hero .text {
 	overflow: hidden;
 	height: 8vw;
 }
 
-.title h2 {
+.hero .title h2 {
 	background: linear-gradient(to right, #B05C86, #FEB6B5);
 	font-size: 6vw;
 	color: #fff;
@@ -37,7 +37,7 @@
 	margin: 0;
 }
 
-.title .moving-text-bottom h2 {
+.hero .title .moving-text-bottom h2 {
 	background: linear-gradient(to right, #FEB6B5, #B05C86);
 	font-size: 6vw;
 	color: #fff;
@@ -49,25 +49,26 @@
 }
 
 
-.moving-text-top {
+.hero .moving-text-top {
 	margin-left: 30vw;
 	transform: translateY(-25%);
 	animation: animation-title 7s ease infinite 1.5s;
 }
-.moving-text-bottom {
+.hero .moving-text-bottom {
 	margin-left: 12vw;
 	transform: translateY(-25%);
 	animation: animation-title 7s ease infinite 1.5s;
 }
 
 /* -------------cards------------- */
-.cards {
+.hero  .cards {
 	margin-top: 100px;
 	display: flex;
 	gap: 5vw;
 	justify-content: center;
 }
-.card {
+.hero  .card {
+	padding: 2vw 2vw;
 	border-radius: 1vw;
 	width: 20vw;
 	background: linear-gradient(45deg, rgba(255, 127, 0, 0.2), rgba(255, 26, 140, 0.2));
@@ -78,20 +79,24 @@
 	transition: all 0.3s ease;
 }
 
-.card h2 {
+  
+.hero a {
+	scroll-behavior: smooth;
+
+
 	font-size: 2vw;
 	color: #e3e3e3;
 	font-weight: 300;
 }
 
-.card:hover{
+.hero .card:hover{
 	filter: brightness(1.5) saturate(0.5);
 	box-shadow: 0 8px 30px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.15);
 	transition: all 0.2s ease;
 	scale: 1.1;
 }
 
-.card:hover h2 {
+.hero .card:hover a {
 	transition: all 0.2s ease;
 	font-weight: 400;
   }
@@ -134,48 +139,50 @@
 		min-height: 80vh;
 	}
 	
-	.title h2,
-	.title .moving-text-bottom h2  {
+	.hero .title h2,
+	.hero .title .moving-text-bottom h2  {
 		background-size: 50vw;
 		font-size: 9vw;
 		font-weight: 600 ;
 
 	}
-	.title h1 {
+	.hero .title h1 {
 		font-weight: 400 ;
 		font-size: 9vw;
 		background-size: 30vw;
 
 	}
-	.text {
+	.hero .text {
 		height: 12vw;
 	}
 
-	.moving-text-top {
+	.hero .moving-text-top {
 		margin-left: 47vw;
 		animation: animation-title 9s ease infinite;
 	}
-	.moving-text-bottom {
+	.hero .moving-text-bottom {
 		margin-left: 18vw;
 		animation: animation-title 9s ease infinite;
 	}
 	
 
 	/* -------------cards------------- */
-.cards {
+	.hero .cards {
 	margin-top: 90px;
 	flex-direction: column;
 	gap: 7vw;
 	justify-content: center;
 }
-.card {
-	border-radius: 1vw;
+.hero .card {
+	border-radius: 2vw;
 	width: 80vw;
+	padding: 7vw 4vw;
+
 }
 
 
-.card h2 {
-	font-size: 5vw;
+.hero  a {
+	font-size: 7vw;
 	font-weight: 300 ;
 
 }

@@ -1,1 +1,38 @@
-src/components/Home/WebDevelopment src/components/Home/Hero/Hero.css src/components/Home/Hero/Hero.jsx
+.design {
+    display: flex;
+    align-items: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    background-color: rgba(80, 80, 80, 0.3);
+    backdrop-filter: blur(10px) ;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 5vw;
+    border-radius: 2vw;
+    }
+    
+    .design .design-title {
+        transform: rotate(-90deg);
+        text-align: center;
+        width:20vw;
+
+    }
+    
+    .design .design-title h2 {
+        margin-bottom: 0;
+        margin-top: -0.5vw;
+        color: rgb(255, 194, 170);
+        font-size: 3vw;
+    }
+    
+    .design .design-info {
+        text-align: start;
+        width: 40vw;
+    }
+    
+    .design .design-info p {
+        color: rgb(228, 228, 228);
+    
+        font-size: 2vw;
+    }
+    

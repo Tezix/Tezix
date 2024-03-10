@@ -4,7 +4,11 @@
 	display: grid;
  
 }
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8vw;
+  margin-bottom: 30vw;
+}
 
 @font-face {
   font-family: 'NATS';
