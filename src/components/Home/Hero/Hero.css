@@ -135,7 +135,7 @@
 
 	.hero {
 		animation: hero-show  1s ease forwards;
-		padding-top: 20vh;
+		padding-top: 15vh;
 		min-height: 80vh;
 	}
 	
@@ -168,15 +168,15 @@
 
 	/* -------------cards------------- */
 	.hero .cards {
-	margin-top: 90px;
+	margin-top: 60px;
 	flex-direction: column;
-	gap: 7vw;
+	gap: 6vw;
 	justify-content: center;
 }
 .hero .card {
 	border-radius: 2vw;
 	width: 80vw;
-	padding: 7vw 4vw;
+	padding: 6vw 4vw;
 
 }
 
@@ -186,6 +186,26 @@
 	font-weight: 300 ;
 
 }
+/* -------------end cards------------- */
+	
+}
+
+
+@media (max-width: 374px) {
+
+
+	/* -------------cards------------- */
+	.hero .cards {
+	margin-top: 30px;
+	
+}
+.hero .card {
+
+	padding: 4vw 4vw;
+
+}
+
+
 /* -------------end cards------------- */
 	
 }

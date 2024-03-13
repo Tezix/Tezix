@@ -31,19 +31,25 @@ function Navbar() {
       window.removeEventListener('resize', handleResize)
     }
   }, [])
-
+  const [menuMobileOpen, setMenuMobileOpen] = useState(false)
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
   return (
     <>
       <div className={`top-nav ${scrolling ? 'scroll-down' : ''}`}>
       <div className='logo-mini'>
-        <a href="#" className='logo-link'>
+        <Link to="/" className='logo-link' onClick={scrollToTop}>
           <img src="/images/logo-nav.svg" alt="logo" />
-        </a>
+        </Link>
         </div>
         {windowWidth >= 450 && (
           <div className='menu-desktop outfit-thin'>
             <Link to="#">About</Link>
-            <Link to="#">Projects</Link>
+            <Link to="/Projects">Projects</Link>
             <Link to="#">Contact</Link>
             <Link to="#">Services</Link>
           </div>
@@ -54,9 +60,22 @@ function Navbar() {
       </div>
 
       {windowWidth < 450 && (
-        <div className='menu-mobile outfit-regular'>
-MENU
-</div>
+        <>
+        <div className={`menu-mobile-hidden ${menuMobileOpen ? 'menu-mobile-open' : '' }`}>
+        <div className='menu-mobile-links outfit-bold'>
+            <Link to="#">About</Link>
+            <Link to="/Projects">Projects</Link>
+            <Link to="#">Contact</Link>
+            <Link to="#">Services</Link>
+          </div>
+        </div>
+
+        <div className={`menu-mobile outfit-regular`}  onClick={()=>setMenuMobileOpen(!menuMobileOpen)}>
+        <img className={`menu-close-icon-hidden ${menuMobileOpen ? 'menu-close-icon-open' : '' }`} src="./../../../images/MobileMenuCloseButton.svg" alt="" />
+        <img className={`menu-icon-open ${menuMobileOpen ? 'menu-icon-hidden' : '' }`}src="./../../../images/MobileMenu.svg" alt="" />
+   
+        </div>
+        </>
 
       )}
     </>

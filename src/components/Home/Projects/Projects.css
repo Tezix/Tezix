@@ -1,0 +1,36 @@
+.projects {
+    margin-top: 15vw;
+}
+.projects h2 {
+    font-size: 5vw;
+    color: rgb(236, 236, 236);
+}
+.projects span {
+    background: linear-gradient(to right, #a13d6c, #ffb4b6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.projects img {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+
+
+@media (max-width: 450px) {
+
+	.projects {
+        margin-top: 45vw;
+    }
+    .projects h2 {
+        font-size: 6.5vw;
+    }
+
+    .projects img {
+        margin-top: 15vw;
+        width: 60%;
+    }
+    
+
+}

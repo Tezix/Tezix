@@ -71,10 +71,11 @@
 	.menu-mobile {
 		position: fixed;
 		color: white;
-		bottom: 10vw;
-		margin-left: 80vw;
+		bottom: 8vw;
+		margin-left: 83vw;
 		animation: nav-show  1s ease forwards;
 		z-index: 3;
+		transition: all 0.3s ease;
 	}
 	
 	.logo-mini {
@@ -95,6 +96,68 @@
 	.top-nav {
 		padding-bottom: 3vw;
 	}
+
+	.menu-mobile-hidden {
+		position: fixed;
+		z-index: 3;
+		bottom: 5vw;
+		margin-left: 98vw;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		transition: all 0.3s ease;
+
+	}
+
+	.menu-close-icon-hidden {
+		position: absolute;
+		bottom: 0vw;
+		transition: all 0.3s ease;
+
+		opacity: 0;
+	}
+
+	.menu-mobile-open {
+		position: fixed;
+		background-color: rgba(50,50,50,0.9);
+		backdrop-filter: blur(2px);
+		border-radius:5vw;
+		width: 96vw;
+		height: 60vw;
+		bottom: 5vw;
+		margin-left: 2vw;
+		transition: all 0.3s ease;
+		opacity: 1;
+	}
+
+
+	.menu-close-icon-open,
+	.menu-icon-open{
+		position: absolute;
+		bottom: 0vw;
+		transition: all 0.3s ease;
+
+		opacity: 1;
+	}
+
+	.menu-icon-hidden {
+		opacity:0;
+		transition: all 0.3s ease;
+
+	}
+
+	.menu-mobile-links {
+		display: grid;
+		gap: 6vw;
+		margin-top: 4vw;
+	}
+
+
+	.menu-mobile-links a{
+		font-size: 6vw;
+		
+	}
+
 
 
 }
