@@ -100,34 +100,38 @@
 	.menu-mobile-hidden {
 		position: fixed;
 		z-index: 3;
-		bottom: 5vw;
-		margin-left: 98vw;
-		width: 0;
-		height: 0;
+		bottom: 0vw;
+		width: 96vw;
+		height: 55vw;
 		opacity: 0;
 		transition: all 0.3s ease;
-
+		overflow: hidden;
+		margin-left: 2vw;
+		display: flex;
+		justify-content: center
 	}
 
 	.menu-close-icon-hidden {
 		position: absolute;
 		bottom: 0vw;
 		transition: all 0.3s ease;
-
 		opacity: 0;
+		left:1vw;
 	}
 
 	.menu-mobile-open {
 		position: fixed;
 		background-color: rgba(50,50,50,0.9);
 		backdrop-filter: blur(2px);
-		border-radius:5vw;
+		border-radius:3vw;
 		width: 96vw;
 		height: 60vw;
-		bottom: 5vw;
-		margin-left: 2vw;
+		bottom: 6vw;
 		transition: all 0.3s ease;
 		opacity: 1;
+		display: flex;
+		justify-content: center;
+		box-shadow: 0 3px 5px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.15);
 	}
 
 
@@ -135,29 +139,47 @@
 	.menu-icon-open{
 		position: absolute;
 		bottom: 0vw;
+		left:1vw;
 		transition: all 0.3s ease;
-
 		opacity: 1;
 	}
 
 	.menu-icon-hidden {
 		opacity:0;
+		left:1vw;
 		transition: all 0.3s ease;
-
 	}
 
 	.menu-mobile-links {
-		display: grid;
-		gap: 6vw;
-		margin-top: 4vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; /* Horizontally centers the content */
+		align-items: center; /* Vertically centers the content */
+		width: 100%;
 	}
 
 
 	.menu-mobile-links a{
 		font-size: 6vw;
-		
+		padding: 1vw 2vw;
+		border-radius: 2vw;
+	}
+	.menu-mobile-links a:hover {
+		background-image: linear-gradient(to right, rgba(181, 98, 137, 0.2), rgba(239, 157, 134, 0.2));
+		scale: 1.1;
+		font-weight: 600;
+		padding: 1vw 20vw;
+		transition: all 0.1s ease;
 	}
 
+	.menu-mobile-links .hrdiv {
+	width:70%;
+	color: darksalmon;
+	}
+
+	.menu-mobile-links .hrdiv hr {
+		border: 1px solid rgba(255, 118, 45, 0.217);
+	}
 
 
 }

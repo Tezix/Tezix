@@ -38,6 +38,13 @@ function Navbar() {
       behavior: "smooth"
     });
   };
+
+
+  const handleMobileLinkClick = () => {
+    setTimeout(() => {
+      setMenuMobileOpen(!menuMobileOpen)
+    }, 300)
+  }
   return (
     <>
       <div className={`top-nav ${scrolling ? 'scroll-down' : ''}`}>
@@ -62,10 +69,13 @@ function Navbar() {
       {windowWidth < 450 && (
         <>
         <div className={`menu-mobile-hidden ${menuMobileOpen ? 'menu-mobile-open' : '' }`}>
-        <div className='menu-mobile-links outfit-bold'>
+          <div className='menu-mobile-links outfit-bold' onClick={()=>handleMobileLinkClick()}>
             <Link to="#">About</Link>
+            <div className='hrdiv'><hr /></div>
             <Link to="/Projects">Projects</Link>
+            <div className='hrdiv'><hr /></div>
             <Link to="#">Contact</Link>
+            <div className='hrdiv'><hr /></div>
             <Link to="#">Services</Link>
           </div>
         </div>
