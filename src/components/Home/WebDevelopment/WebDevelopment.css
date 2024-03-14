@@ -1,0 +1,71 @@
+.web-development {
+display: flex;
+align-items: center;
+padding-top: 2vw;
+padding-bottom: 2vw;
+background-color: rgba(80, 80, 80, 0.3);
+backdrop-filter: blur(10px) ;
+width: 90vw;
+margin: 0 auto;
+margin-top: 10vw;
+border-radius: 2vw;
+}
+
+.web-development .web-title {
+    transform: rotate(-90deg);
+    text-align: center;
+    width:20vw;
+}
+
+.web-development .web-title h2 {
+    margin-bottom: 0;
+    margin-top: -0.5vw;
+    color: rgb(255, 194, 170);
+    font-size: 3vw;
+}
+
+.web-development .web-info {
+    text-align: start;
+    width: 40vw;
+}
+
+.web-development .web-info p {
+    color: rgb(228, 228, 228);
+
+    font-size: 2vw;
+}
+
+
+@media (max-width: 600px) {
+
+    .web-development {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        margin-top: 20vw;
+        border-radius: 2vw;
+        width: 95vw;
+        }
+
+    .web-development .web-title {
+        transform: rotate(0deg);
+        width:100%;
+        display: flex;
+        gap: 2vw;
+        justify-content: center;
+    }
+        
+        .web-development .web-title h2 {
+            font-size: 8vw;
+        }
+
+        .web-development .web-info p {
+            font-size: 4vw;
+        }
+        .web-development .web-info {
+            text-align: center;
+            width: 90vw;
+        }
+}

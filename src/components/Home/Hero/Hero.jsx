@@ -31,9 +31,9 @@ function Hero() {
         </div>
       </div>
       <div className="cards">
-        <div className="card"><h2 className="outfit-extralight">Web development</h2></div>
-        <div className="card"><h2 className="outfit-extralight">Design UX/UI</h2></div>
-        <div className="card"><h2 className="outfit-extralight">Marketing</h2></div>
+       <a href='#web' className="outfit-extralight"> <div className="card">Web development</div></a>
+        <a href='#design'className="outfit-extralight"><div className="card">Design UX/UI</div></a>
+        <a href='#marketing' className="outfit-extralight"><div className="card">Marketing</div></a>
       </div>
     </div>
   </>

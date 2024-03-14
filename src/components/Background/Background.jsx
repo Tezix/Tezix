@@ -100,12 +100,12 @@ function BackgroundHome() {
       this.graphics.alpha = 0.825;
   
       // 250ms after the last window resize event, recalculate orb positions.
-      window.addEventListener(
-        "resize",
-        debounce(() => {
-          this.bounds = this.setBounds();
-        }, 250)
-      );
+      // window.addEventListener(
+      //   "resize",
+      //   debounce(() => {
+      //     this.bounds = this.setBounds();
+      //   }, 250)
+      // );
     }
   
     setBounds() {
@@ -113,11 +113,11 @@ function BackgroundHome() {
       const maxDist =
         window.innerWidth < 1000 ? window.innerWidth / 3 : window.innerWidth / 5;
       // the { x, y } origin for each orb (the bottom right of the screen)
-      const originX = window.innerWidth / 1.25;
+      const originX = window.innerWidth / 1.6;
       const originY =
         window.innerWidth < 1000
           ? window.innerHeight
-          : window.innerHeight / 1.375;
+          : window.innerHeight / 1.6;
   
       // allow each orb to move x distance away from it's x / y origin
       return {

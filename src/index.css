@@ -1,3 +1,16 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+	display: grid;
+ 
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8vw;
+  margin-bottom: 30vw;
+  min-height: 80vh;
+
+}
 
 @font-face {
   font-family: 'NATS';
@@ -5,8 +18,8 @@
 }
 
 body {
+  margin: 0;
 animation: background-animation 0.3s ease forwards 1.8s;
-font-display: block;
 }
 
 a {
@@ -36,7 +49,19 @@ a {
   font-style: normal;
 }
 
+.outfit-bold {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
+.outfit-extrabold {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 @keyframes background-animation {
   0% {
     background-color: rgb(218, 218, 218);
