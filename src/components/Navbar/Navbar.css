@@ -107,7 +107,8 @@
 		transition: all 0.3s ease;
 		overflow: hidden;
 		margin-left: 2vw;
-		display: flex;
+		/* display: flex; */
+		display: none;
 		justify-content: center
 	}
 
@@ -153,15 +154,16 @@
 	.menu-mobile-links {
 		display: flex;
 		flex-direction: column;
-		justify-content: center; /* Horizontally centers the content */
-		align-items: center; /* Vertically centers the content */
+		justify-content: center; 
+		align-items: center; 
 		width: 100%;
 	}
 
 
 	.menu-mobile-links a{
 		font-size: 6vw;
-		padding: 1vw 2vw;
+		padding: 1vw 20vw;
+
 		border-radius: 2vw;
 	}
 	.menu-mobile-links a:hover {
