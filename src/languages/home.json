@@ -1,0 +1,124 @@
+{
+    "hero" : {
+        "h1" : {
+            "top" : {
+                "en" : "We help you",
+                "es" : "Te ayudamos a"
+            },
+            "bottom" : {
+                "en" : "your",
+                "es" : "tus"
+            }
+        },
+        "h2": {
+            "top" : {
+                "firstWord" : {
+                    "en" : "building",
+                    "es" : "construir"
+                },
+                "secondWord" : {
+                    "en" : "enhacing",
+                    "es" : "mejorar"
+                },
+                "thirdWord" : {
+                    "en" : "reaching",
+                    "es" : "lograr"
+                },
+                "fourthWord" : {
+                    "en" : "building",
+                    "es" : "construir"
+                }
+            },
+            "bottom" : {
+                "firstWord" : {
+                    "en" : "ideas",
+                    "es" : "ideas"
+                },
+                "secondWord" : {
+                    "en" : "business",
+                    "es" : "proyectos"
+                },
+                "thirdWord" : {
+                    "en" : "goals",
+                    "es" : "metas"
+                },
+                "fourthWord" : {
+                    "en" : "ideas",
+                    "es" : "ideas"
+                }
+            }
+        },
+        
+        "a" : {
+            "firstWord" : {
+                "en" : "Web development",
+                "es" : "Desarrollo web"
+            },
+            "secondWord" : {
+                "en" : "Design UX/UI",
+                "es" : "Diseño UX/UI"
+            },
+            "thirdWord" : {
+                "en" : "Marketing",
+                "es" : "Marketing"
+            }
+        }
+    },
+    "WhoWeAre": {
+        "h2" : {
+            "en" : "Who We Are",
+            "es": "Quiénes somos"
+        },
+        "p1": {
+            "en": "We're an independent agency of developers and designers committed to realizing your ideas.",
+            "es": "Somos una agencia independiente de desarrolladores y diseñadores comprometidos en hacer realidad tus ideas."
+        },
+        "p2": {
+            "en": "Our focus is on innovative web solutions tailored to your needs.",
+            "es": "Nuestro enfoque se centra en soluciones web innovadoras adaptadas a tus necesidades."
+        },
+        "actionButton": {
+            "en" : "BUILD TOGETHER",
+            "es": "EMPECEMOS"
+        }
+    },
+    "WebDevelopment" : {
+        "firstH2" : {
+            "en" : "Web",
+            "es" : "Desarrollo"
+        },
+        "secondH2" : {
+            "en" : "development",
+            "es" : "web"
+        },
+        "p" : {
+            "en": "Elevate your online presence with our expert web development services. We craft dynamic, responsive websites tailored to your needs for seamless functionality and captivating design.",
+            "es" : "Eleve su presencia en línea con nuestros servicios expertos de desarrollo web. Creamos sitios web dinámicos y receptivos adaptados a sus necesidades para una funcionalidad perfecta y un diseño cautivador."
+        }
+    },
+    "Design" : {
+        "firstH2" : {
+            "en" : "Design",
+            "es" : "Diseño"
+        },
+        "secondH2" : {
+            "en" : "UX/UI",
+            "es" : "UX/UI"
+        },
+        "p" : {
+            "en": "Elevate your online presence with our expert design development services. We craft dynamic, responsive designsites tailored to your needs for seamless functionality and captivating design.",
+            "es" : "Eleve su presencia en línea con nuestros servicios expertos de desarrollo web. Creamos sitios web dinámicos y receptivos adaptados a sus necesidades para una funcionalidad perfecta y un diseño cautivador."
+        }
+    },
+    "Marketing" : {
+        "h2" : {
+            "en" : "Marketing",
+            "es" : "Marketing"
+        },
+   
+        "p" : {
+            "en": "Elevate your online presence with our expert marketing development services. We craft dynamic, responsive marketingsites tailored to your needs for seamless functionality and captivating marketing.",
+            "es" : "Eleve su presencia en línea con nuestros servicios expertos de desarrollo de marketing. Creamos sitios de marketing dinámicos y receptivos adaptados a sus necesidades para una funcionalidad perfecta y un marketing cautivador."
+        }
+    } 
+}

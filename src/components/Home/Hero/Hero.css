@@ -1,18 +1,20 @@
 .hero {
-    padding-top: 25vh;
-	animation: hero-show  1s ease forwards;
+	padding-top: 25vh;
+	animation: hero-show 1s ease forwards;
 	text-align: start;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	min-height: 75vh;
 }
+
 .hero .title {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
+
 }
+
 .hero .title h1 {
 	color: #E9E9E9;
 	font-size: 6vw;
@@ -42,7 +44,7 @@
 	font-size: 6vw;
 	color: #fff;
 	background-clip: text;
-	background-size: 22vw;
+	background-size: 26vw;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin: 0;
@@ -50,36 +52,52 @@
 
 
 .hero .moving-text-top {
-	margin-left: 30vw;
-	transform: translateY(-25%);
-	animation: animation-title 7s ease infinite 1.5s;
-}
-.hero .moving-text-bottom {
-	margin-left: 12vw;
 	transform: translateY(-25%);
 	animation: animation-title 7s ease infinite 1.5s;
 }
 
+.hero .moving-text-bottom {
+	transform: translateY(-25%);
+	animation: animation-title 7s ease infinite 1.5s;
+}
+
+.hero .moving-text-top.moving-en {
+	margin-left: 30vw;
+}
+
+.hero .moving-text-bottom.moving-en {
+	margin-left: 12vw;
+}
+
+.hero .moving-text-top.moving-es {
+	margin-left: 38vw;
+}
+
+.hero .moving-text-bottom.moving-es {
+	margin-left: 9vw;
+}
+
 /* -------------cards------------- */
-.hero  .cards {
+.hero .cards {
 	margin-top: 100px;
 	display: flex;
 	gap: 5vw;
 	justify-content: center;
 }
-.hero  .card {
+
+.hero .card {
 	padding: 2vw 2vw;
 	border-radius: 1vw;
 	width: 20vw;
 	background: linear-gradient(45deg, rgba(255, 127, 0, 0.2), rgba(255, 26, 140, 0.2));
 	backdrop-filter: blur(10px);
 	text-align: center;
-	box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.15);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
 
-  
+
 .hero a {
 	scroll-behavior: smooth;
 
@@ -89,9 +107,9 @@
 	font-weight: 300;
 }
 
-.hero .card:hover{
+.hero .card:hover {
 	filter: brightness(1.5) saturate(0.5);
-	box-shadow: 0 8px 30px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.15);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.15);
 	transition: all 0.2s ease;
 	scale: 1.1;
 }
@@ -99,7 +117,7 @@
 .hero .card:hover a {
 	transition: all 0.2s ease;
 	font-weight: 400;
-  }
+}
 
 /* -------------end cards------------- */
 
@@ -107,51 +125,58 @@
 @keyframes animation-title {
 	0% {
 		transform: translateY(-25%);
-	}	
+	}
+
 	5% {
 		transform: translateY(-50%);
 	}
+
 	40% {
 		transform: translateY(-50%);
 	}
+
 	45% {
 		transform: translateY(-75%);
 	}
+
 	70% {
 		transform: translateY(-75%);
 	}
+
 	75% {
 		transform: translateY(-100%);
 	}
-	
-	100%{
+
+	100% {
 		transform: translateY(-100%);
 	}
-	
+
 }
 
 
 @media (max-width: 600px) {
 
 	.hero {
-		animation: hero-show  1s ease forwards;
+		animation: hero-show 1s ease forwards;
 		padding-top: 15vh;
 		min-height: 80vh;
 	}
-	
+
 	.hero .title h2,
-	.hero .title .moving-text-bottom h2  {
+	.hero .title .moving-text-bottom h2 {
 		background-size: 50vw;
 		font-size: 9vw;
-		font-weight: 600 ;
+		font-weight: 600;
 
 	}
+
 	.hero .title h1 {
-		font-weight: 400 ;
+		font-weight: 400;
 		font-size: 9vw;
 		background-size: 30vw;
 
 	}
+
 	.hero .text {
 		height: 12vw;
 	}
@@ -160,34 +185,52 @@
 		margin-left: 47vw;
 		animation: animation-title 9s ease infinite;
 	}
+
 	.hero .moving-text-bottom {
 		margin-left: 18vw;
 		animation: animation-title 9s ease infinite;
 	}
-	
+
+	.hero .moving-text-top.moving-en {
+		margin-left: 47vw;
+	}
+
+	.hero .moving-text-bottom.moving-en {
+		margin-left: 18vw;
+	}
+
+	.hero .moving-text-top.moving-es {
+		margin-left: 58vw;
+	}
+
+	.hero .moving-text-bottom.moving-es {
+		margin-left: 13vw;
+	}
 
 	/* -------------cards------------- */
 	.hero .cards {
-	margin-top: 60px;
-	flex-direction: column;
-	gap: 6vw;
-	justify-content: center;
-}
-.hero .card {
-	border-radius: 2vw;
-	width: 80vw;
-	padding: 6vw 4vw;
+		margin-top: 60px;
+		flex-direction: column;
+		gap: 6vw;
+		justify-content: center;
+	}
 
-}
+	.hero .card {
+		border-radius: 2vw;
+		width: 80vw;
+		padding: 6vw 4vw;
+
+	}
 
 
-.hero  a {
-	font-size: 7vw;
-	font-weight: 300 ;
+	.hero a {
+		font-size: 7vw;
+		font-weight: 300;
 
-}
-/* -------------end cards------------- */
-	
+	}
+
+	/* -------------end cards------------- */
+
 }
 
 
@@ -196,16 +239,17 @@
 
 	/* -------------cards------------- */
 	.hero .cards {
-	margin-top: 30px;
-	
-}
-.hero .card {
+		margin-top: 30px;
 
-	padding: 4vw 4vw;
+	}
 
-}
+	.hero .card {
+
+		padding: 4vw 4vw;
+
+	}
 
 
-/* -------------end cards------------- */
-	
+	/* -------------end cards------------- */
+
 }

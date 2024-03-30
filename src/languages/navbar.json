@@ -1,0 +1,26 @@
+{
+        "about": {
+            "en" : "About us",
+            "es" : "Sobre Nosotros"
+        },
+        "projects": {
+            "en" : "Projects",
+            "es" : "Proyectos"
+        },
+        "contact": {
+            "en" : "Contact",
+            "es" : "Contacto"
+        },
+        "services" : {
+            "en" : "Services",
+            "es" : "Servicios"
+        },
+        "actionButton" : {
+            "en" : "GET IN TOUCH",
+            "es" : "SABER MÁS"
+        },
+        "languageTooltip" : {
+            "en" : "Change language",
+            "es" : "Cambiar idioma"
+        }
+}

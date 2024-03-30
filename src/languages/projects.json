@@ -1,0 +1,16 @@
+{
+  "title" : {
+    "firstH2" : {
+        "en" : "You will see ",
+        "es": "Podrás ver "
+    },
+    "span" : {
+        "en" : "our projects",
+        "es": " nuestros proyectos"
+    },
+    "secondH2" : {
+        "en" : " soon",
+        "es": " pronto"
+    }
+  }
+}

@@ -1,15 +1,12 @@
-import { Link } from 'react-router-dom';
-import './ActionButton.css';
+import { Link } from "react-router-dom";
+import "./ActionButton.css";
 
-function ActionButton({text}) {
-  
+function ActionButton({ text }) {
   return (
-        <div className="get-in-touch-button">
-          <Link to="#">{text}</Link> 
-        </div>
-      
-  )
+    <div className="action-button">
+      <Link to="/contact">{text}</Link>
+    </div>
+  );
 }
 
 export default ActionButton;
-

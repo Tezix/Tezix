@@ -2,7 +2,6 @@ import './Intro.css';
 
 function Intro() {
 
-
   return (
     <>
     <div className='initial-logo'>
@@ -31,10 +30,8 @@ function Intro() {
                           <stop stopColor="#B66388"/>
                           <stop offset="1" stopColor="#AC5585"/>
                       </linearGradient>
-                    
               </defs>
             </svg>
-
             <svg id="letters" width="1171" height="284" viewBox="0 0 1171 284" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path  d="M0.525568 62.4091V0.363628H247.045V62.4091H161.733V284H85.8381V62.4091H0.525568ZM276.025 284V0.363628H480.443V62.4091H353.028V111.159H469.917V173.205H353.028V221.955H479.889V284H276.025ZM519.741 284V241.344L653.803 62.4091H520.295V0.363628H751.857V43.0199L617.795 221.955H751.303V284H519.741ZM866.427 0.363628V284H789.424V0.363628H866.427ZM985.463 0.363628L1032 82.9062H1034.21L1081.3 0.363628H1167.17L1082.41 142.182L1170.49 284H1082.41L1034.21 199.795H1032L983.801 284H896.272L983.247 142.182L899.042 0.363628H985.463Z" fill="url(#paint0_linear_131_139)"/>
               <defs>
@@ -45,9 +42,6 @@ function Intro() {
               </defs>
             </svg>
     </div>
-
-
-
     </>
   );
 }

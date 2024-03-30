@@ -1,15 +1,14 @@
 #root {
   margin: 0 auto;
   text-align: center;
-	display: grid;
- 
+  display: grid;
 }
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 8vw;
   margin-bottom: 30vw;
   min-height: 80vh;
-
 }
 
 @font-face {
@@ -19,20 +18,21 @@ html {
 
 body {
   margin: 0;
-animation: background-animation 0.3s ease forwards 1.8s;
+  animation: background-animation 0.3s ease forwards 1.8s;
 }
 
 a {
-	text-decoration: none;
-	color: rgb(232, 232, 232);
-	align-items: center;
-  }
+  text-decoration: none;
+  color: rgb(232, 232, 232);
+  align-items: center;
+}
 
 .outfit-thin {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
+  font-size: 1.5vw;
 }
 
 .outfit-extralight {
@@ -40,6 +40,7 @@ a {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+  font-size: 1.5vw;
 }
 
 .outfit-regular {
@@ -47,6 +48,7 @@ a {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 1.5vw;
 }
 
 .outfit-bold {
@@ -54,6 +56,7 @@ a {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  font-size: 1.5vw;
 }
 
 .outfit-extrabold {
@@ -61,11 +64,14 @@ a {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  font-size: 1.5vw;
 }
+
 @keyframes background-animation {
   0% {
     background-color: rgb(218, 218, 218);
   }
+
   100% {
     background-color: rgb(30, 30, 30);
   }

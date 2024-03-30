@@ -1,0 +1,65 @@
+.contact-title {
+    margin-top: 10vw;
+    margin-bottom: 2vw;
+}
+
+.contact-title h2 {
+    font-size: 5vw;
+    color: rgb(236, 236, 236);
+    background: linear-gradient(to right, #a13d6c, #ffb4b6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 35vw;
+    margin: 0 !important;
+}
+
+.contact-title h3 {
+    margin: 0 !important;
+    font-size: 2vw;
+    color: rgb(178, 178, 178);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact .contact-form {
+    padding: 2vw 2vw;
+    border: 1px solid rgba(200, 200, 200, 0.1);
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 1vw;
+    width: 40vw;
+    margin: 0 3vw;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 2vw;
+    backdrop-filter: blur(50px) brightness(140%) hue-rotate(-20deg);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.contact .contact-form h2 {
+    color: #d3a0b3;
+}
+
+.contact .contact-form .success-form {
+    text-align: center;
+}
+
+
+
+@media (max-width: 450px) {
+
+    .contact-title {
+        margin-top: 45vw;
+    }
+
+    .contact-title h2 {
+        font-size: 6.5vw;
+    }
+
+
+}

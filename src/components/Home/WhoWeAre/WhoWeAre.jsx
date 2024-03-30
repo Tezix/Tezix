@@ -1,18 +1,19 @@
 import ActionButton from '../../ActionButton/ActionButton';
 import './WhoWeAre.css'
+import { useLanguage } from '../../LanguageContext/LanguageContext'
+import dataLanguage from './../../../languages/home.json'
 
 function WhoWeAre() {
-
-
+  const { language } = useLanguage()
 
   return (
   <>
   <div className="who-we-are">
     <div className='info'>
-        <h2 className='outfit-extrabold'>Who We Are</h2>
-        <p className='outfit-bold'>We're an independent agency of developers and designers committed to realizing your ideas. </p>
-        <p className='outfit-bold'>Our focus is on innovative web solutions tailored to your needs. </p> 
-        <div className='who-we-are-action-button'><ActionButton text={'BUILD TOGETHER'}/></div>
+        <h2 className='outfit-extrabold'>{dataLanguage.WhoWeAre.h2[language]}</h2>
+        <p className='outfit-bold'>{dataLanguage.WhoWeAre.p1[language]}</p>
+        <p className='outfit-bold'>{dataLanguage.WhoWeAre.p2[language]}</p> 
+        <div className='who-we-are-action-button'><ActionButton text={dataLanguage.WhoWeAre.actionButton[language]}/></div>
         
     </div>
     <div className='images'>

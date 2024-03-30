@@ -1,0 +1,38 @@
+{
+  "title": {
+    "span": {
+      "en": "Contact us",
+      "es": "Contáctanos"
+    },
+    "subtitle": {
+      "en": "Get in touch and let us know how we can help",
+      "es": "Envíanos un mensaje y dinos como podemos ayudar"
+    }
+  },
+  "form": {
+    "nameField": {
+      "en": "Name",
+      "es": "Nombre"
+    },
+    "messageField": {
+      "en": "Share your idea",
+      "es": "Cuéntanos tu idea"
+    },
+    "tooltipSend": {
+      "en": "Please fill all the fields",
+      "es": "Por favor rellena todos los campos"
+    },
+    "sendField": {
+      "en": "Send",
+      "es": "Enviar"
+    },
+    "confirmationFirst": {
+      "en": "Thank you for getting in touch.",
+      "es": "Gracias por contactar."
+    },
+    "confirmationSecond": {
+      "en": "We will contact you in 24h/48h.",
+      "es": "Te contestaremos en 24h/48h."
+    }
+  }
+}
