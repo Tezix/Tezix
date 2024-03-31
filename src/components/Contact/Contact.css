@@ -31,7 +31,7 @@
     border-right: 0;
     border-bottom: 0;
     border-radius: 1vw;
-    width: 40vw;
+    width: 45vw;
     margin: 0 3vw;
     display: flex;
     flex-direction: column;
@@ -39,6 +39,12 @@
     gap: 2vw;
     backdrop-filter: blur(50px) brightness(140%) hue-rotate(-20deg);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.contact .contact-form .first-row {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
 }
 
 .contact .contact-form h2 {
@@ -49,9 +55,44 @@
     text-align: center;
 }
 
+@media (max-width: 900px) {
 
+    .contact .contact-form .first-row {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    .contact-title {
+        margin-top: 15vw;
+    }
+
+    .contact-title h2 {
+        font-size: 8vw;
+        background-size: 75vw;
+    }
+
+    .contact-title h3 {
+        font-size: 4vw;
+    }
+
+    .contact .contact-form {
+        padding: 7vw 5vw;
+        border-radius: 3vw;
+        width: 80vw;
+        margin: 10vw 3vw;
+        gap: 3vw;
+    }
+
+}
 
 @media (max-width: 450px) {
+
+    .contact .contact-form .first-row {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2vw;
+    }
 
     .contact-title {
         margin-top: 40vw;

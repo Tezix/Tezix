@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./Navbar.css";
 import ActionButton from "../ActionButton/ActionButton";
@@ -10,7 +10,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 function Navbar() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [scrolling, setScrolling] = useState(false);
-
+  const location = useLocation();
   const { language, changeLanguage } = useLanguage();
 
   const toggleLanguage = () => {
@@ -59,22 +59,24 @@ function Navbar() {
     <>
       <div className={`top-nav ${scrolling ? "scroll-down" : ""}`}>
         <div className="logo-mini">
-          <Link to="/" className="logo-link" onClick={scrollToTop}>
+          <NavLink to="/" className="logo-link" onClick={scrollToTop}>
             <img src="/images/logo-nav.svg" alt="logo" />
-          </Link>
+          </NavLink>
         </div>
         {windowWidth >= 450 && (
           <div className="menu-desktop outfit-thin">
-            <Link to="#">{languagesData.about[language]}</Link>
-            <Link to="/Projects">{languagesData.projects[language]}</Link>
-            <Link to="/Contact">{languagesData.contact[language]}</Link>
-            <Link to="#">{languagesData.services[language]}</Link>
+            <NavLink to="/about">{languagesData.about[language]}</NavLink>
+            <NavLink to="/Projects">{languagesData.projects[language]}</NavLink>
+            <NavLink to="/Contact">{languagesData.contact[language]}</NavLink>
+            <NavLink to="/Services">{languagesData.services[language]}</NavLink>
           </div>
         )}
         <div className="action-button-nav">
-          <div className="right-nav-buttons-action">
-            <ActionButton text={languagesData.actionButton[language]} />
-          </div>
+          {location.pathname !== "/contact" && (
+            <div className="right-nav-buttons-action">
+              <ActionButton text={languagesData.actionButton[language]} />
+            </div>
+          )}
           <div className="right-nav-buttons-language">
             <Tooltip title={languagesData.languageTooltip[language]}>
               <LanguageIcon onClick={toggleLanguage} />

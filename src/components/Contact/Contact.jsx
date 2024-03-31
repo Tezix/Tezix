@@ -55,53 +55,61 @@ function Projects() {
           <div className="contact-form">
             {!state.succeeded ? (
               <>
-                <TextField
-                  id="name"
-                  type="text"
-                  name="name"
-                  label={dataLanguage.form.nameField[language]}
-                  variant="outlined"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  InputProps={{
-                    sx: {
-                      color: "#FFFFFF",
-                    },
-                  }}
-                  sx={{
-                    "& label": { color: "rgba(200, 200, 200, 0.6)" },
-                    "& label.Mui-focused": { color: "#FF99BE" },
-                    "& .MuiOutlinedInput-root": {
-                      "& fieldset": { borderColor: "rgba(200, 200, 200, 0.1)" },
-                      "&:hover fieldset": { borderColor: "#FF99BE" },
-                      "&.Mui-focused fieldset": { borderColor: "#FF99BE" },
-                    },
-                  }}
-                />
+                <div className="first-row">
+                  <TextField
+                    fullWidth
+                    id="name"
+                    type="text"
+                    name="name"
+                    label={dataLanguage.form.nameField[language]}
+                    variant="outlined"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    InputProps={{
+                      sx: {
+                        color: "#FFFFFF",
+                      },
+                    }}
+                    sx={{
+                      "& label": { color: "rgba(200, 200, 200, 0.6)" },
+                      "& label.Mui-focused": { color: "#FF99BE" },
+                      "& .MuiOutlinedInput-root": {
+                        "& fieldset": {
+                          borderColor: "rgba(200, 200, 200, 0.1)",
+                        },
+                        "&:hover fieldset": { borderColor: "#FF99BE" },
+                        "&.Mui-focused fieldset": { borderColor: "#FF99BE" },
+                      },
+                    }}
+                  />
 
-                <TextField
-                  id="email"
-                  type="email"
-                  name="email"
-                  label="Email"
-                  variant="outlined"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  InputProps={{
-                    sx: {
-                      color: "#FFFFFF",
-                    },
-                  }}
-                  sx={{
-                    "& label": { color: "rgba(200, 200, 200, 0.6)" },
-                    "& label.Mui-focused": { color: "#FF99BE" },
-                    "& .MuiOutlinedInput-root": {
-                      "& fieldset": { borderColor: "rgba(200, 200, 200, 0.1)" },
-                      "&:hover fieldset": { borderColor: "#FF99BE" },
-                      "&.Mui-focused fieldset": { borderColor: "#FF99BE" },
-                    },
-                  }}
-                />
+                  <TextField
+                    fullWidth
+                    id="email"
+                    type="email"
+                    name="email"
+                    label="Email"
+                    variant="outlined"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    InputProps={{
+                      sx: {
+                        color: "#FFFFFF",
+                      },
+                    }}
+                    sx={{
+                      "& label": { color: "rgba(200, 200, 200, 0.6)" },
+                      "& label.Mui-focused": { color: "#FF99BE" },
+                      "& .MuiOutlinedInput-root": {
+                        "& fieldset": {
+                          borderColor: "rgba(200, 200, 200, 0.1)",
+                        },
+                        "&:hover fieldset": { borderColor: "#FF99BE" },
+                        "&.Mui-focused fieldset": { borderColor: "#FF99BE" },
+                      },
+                    }}
+                  />
+                </div>
                 <TextField
                   id="message"
                   type="text"

@@ -73,11 +73,20 @@
 	justify-content: center;
 }
 
+
 .menu-desktop a {
 	border-radius: 0.5vw;
 	font-size: 1.7vw;
 	background-image: transparent;
 	padding: 5px 15px;
+	transition: all 0.1s ease;
+}
+
+.menu-desktop .active {
+	background-image: linear-gradient(to right, rgba(181, 98, 137, 0.2), rgba(239, 157, 134, 0.2));
+	font-size: 1;
+	scale: 1.1;
+	font-weight: 300;
 	transition: all 0.1s ease;
 }
 
@@ -87,6 +96,11 @@
 	scale: 1.1;
 	font-weight: 300;
 	transition: all 0.1s ease;
+}
+
+.menu-desktop a:active {
+	background-image: linear-gradient(to right, rgba(181, 98, 137, 0.3), rgba(239, 157, 134, 0.3));
+
 }
 
 @keyframes nav-show {
