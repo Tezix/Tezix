@@ -54,12 +54,24 @@
 @media (max-width: 450px) {
 
     .contact-title {
-        margin-top: 45vw;
+        margin-top: 40vw;
     }
 
     .contact-title h2 {
-        font-size: 6.5vw;
+        font-size: 8vw;
+        background-size: 75vw;
     }
 
+    .contact-title h3 {
+        font-size: 4vw;
+    }
+
+    .contact .contact-form {
+        padding: 7vw 5vw;
+        border-radius: 3vw;
+        width: 80vw;
+        margin: 10vw 3vw;
+        gap: 3vw;
+    }
 
 }
