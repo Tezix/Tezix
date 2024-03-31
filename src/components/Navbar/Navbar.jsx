@@ -66,9 +66,9 @@ function Navbar() {
         {windowWidth >= 450 && (
           <div className="menu-desktop outfit-thin">
             <NavLink to="/about">{languagesData.about[language]}</NavLink>
-            <NavLink to="/Projects">{languagesData.projects[language]}</NavLink>
-            <NavLink to="/Contact">{languagesData.contact[language]}</NavLink>
-            <NavLink to="/Services">{languagesData.services[language]}</NavLink>
+            <NavLink to="/projects">{languagesData.projects[language]}</NavLink>
+            <NavLink to="/contact">{languagesData.contact[language]}</NavLink>
+            <NavLink to="/services">{languagesData.services[language]}</NavLink>
           </div>
         )}
         <div className="action-button-nav">
@@ -96,19 +96,19 @@ function Navbar() {
               className="menu-mobile-links outfit-bold"
               onClick={() => handleMobileLinkClick()}
             >
-              <Link to="#">{languagesData.about[language]}</Link>
+              <Link to="/about">{languagesData.about[language]}</Link>
               <div className="hrdiv">
                 <hr />
               </div>
-              <Link to="/Projects">{languagesData.projects[language]}</Link>
+              <Link to="/projects">{languagesData.projects[language]}</Link>
               <div className="hrdiv">
                 <hr />
               </div>
-              <Link to="/Contact">{languagesData.contact[language]}</Link>
+              <Link to="/contact">{languagesData.contact[language]}</Link>
               <div className="hrdiv">
                 <hr />
               </div>
-              <Link to="#">{languagesData.services[language]}</Link>
+              <Link to="/services">{languagesData.services[language]}</Link>
               <LanguageIcon onClick={toggleLanguage} sx={{ color: "white" }} />
             </div>
           </div>
